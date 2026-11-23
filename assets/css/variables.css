@@ -1,0 +1,224 @@
+/* ==========================================================
+   EMRAN Smart Healthcare Solutions
+   Design System Variables
+   Version : 1.1
+========================================================== */
+
+:root {
+  /* ======================================================
+     BRAND COLORS
+  ====================================================== */
+
+  --primary: #0f6fff;
+  --primary-dark: #0b5ed7;
+  --primary-light: #5fa8ff;
+
+  --secondary: #00c897;
+  --secondary-dark: #00a67e;
+  --secondary-light: #6fe6cc;
+
+  /* ======================================================
+     STATUS COLORS
+  ====================================================== */
+
+  --success: #198754;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --info: #0dcaf0;
+
+  /* ======================================================
+     NEUTRAL COLORS
+  ====================================================== */
+
+  --white: #ffffff;
+
+  --gray-100: #f8fafc;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  --black: #000000;
+
+  /* ======================================================
+     BACKGROUND
+  ====================================================== */
+
+  --body-bg: #ffffff;
+
+  --section-light: #f8fafc;
+
+  --section-dark: #0f172a;
+
+  --footer-bg: #111827;
+
+  /* ======================================================
+     TEXT COLORS
+  ====================================================== */
+
+  --heading-color: #0f172a;
+
+  --text-color: #334155;
+
+  --text-light: #64748b;
+
+  --text-primary: #212529;
+
+  --text-secondary: #6c757d;
+
+  --text-muted: #adb5bd;
+
+  --text-white: #ffffff;
+
+  /* ======================================================
+     BORDER
+  ====================================================== */
+
+  --border-color: var(--gray-200);
+
+  --border-light: rgba(255, 255, 255, 0.15);
+
+  /* ======================================================
+     GRADIENT
+  ====================================================== */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-light)
+  );
+
+  --gradient-secondary: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  /* ======================================================
+     TYPOGRAPHY
+  ====================================================== */
+
+  --font-family:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  /* Font Size */
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3rem;
+
+  /* Font Weight */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Line Height */
+
+  --lh-base: 1.7;
+
+  --lh-heading: 1.2;
+
+  /* ======================================================
+     SPACING
+  ====================================================== */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 5rem;
+  --space-10: 6rem;
+
+  /* ======================================================
+     BORDER RADIUS
+  ====================================================== */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  /* ======================================================
+     SHADOW
+  ====================================================== */
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
+
+  --shadow-xl: 0 20px 50px rgba(15, 23, 42, 0.15);
+
+  /* ======================================================
+     TRANSITION
+  ====================================================== */
+
+  --transition-fast: 0.2s ease;
+
+  --transition: 0.3s ease;
+
+  --transition-slow: 0.5s ease;
+
+  --transition-bounce: all 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  /* ======================================================
+     LAYOUT
+  ====================================================== */
+
+  --container-sm: 540px;
+
+  --container-md: 720px;
+
+  --container-lg: 960px;
+
+  --container-xl: 1140px;
+
+  --container-xxl: 1320px;
+
+  --container-width: 1320px;
+
+  --navbar-height: 80px;
+
+  --hero-height: 100vh;
+
+  --section-padding: 100px;
+
+  /* ======================================================
+     EFFECTS
+  ====================================================== */
+
+  --blur: blur(16px);
+
+  --opacity-disabled: 0.5;
+
+  --opacity-overlay: 0.8;
+
+  /* ======================================================
+     Z-INDEX
+  ====================================================== */
+
+  --z-navbar: 999;
+
+  --z-dropdown: 1000;
+
+  --z-modal: 1050;
+}

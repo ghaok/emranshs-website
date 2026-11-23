@@ -1,0 +1,31 @@
+{
+  "name": "EMRAN Smart Healthcare Solutions",
+  "short_name": "EMRAN",
+  "description": "Platform Manajemen Mutu Pelayanan Kesehatan untuk mendukung survei kepuasan pasien, pengaduan pasien, manajemen RTL, dan analitik mutu.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0F6FFF",
+  "lang": "id-ID",
+  "categories": ["health", "medical", "business", "productivity"],
+  "icons": [
+    {
+      "src": "favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

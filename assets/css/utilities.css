@@ -1,0 +1,205 @@
+/* ======================================================
+   SECTION SPACING
+====================================================== */
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-padding-sm {
+  padding: 70px 0;
+}
+
+.section-padding-lg {
+  padding: 140px 0;
+}
+
+/* ======================================================
+   TYPOGRAPHY
+====================================================== */
+
+.section-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.section-description {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* ======================================================
+   TEXT UTILITIES
+====================================================== */
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-muted {
+  color: var(--text-light) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ======================================================
+   BACKGROUND
+====================================================== */
+
+.bg-primary-soft {
+  background: rgba(15, 111, 255, 0.05);
+}
+
+.bg-light {
+  background: #f8fafc;
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+/* ======================================================
+   SHADOW
+====================================================== */
+
+.shadow-soft {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.shadow-hover {
+  transition: var(--transition);
+}
+
+.shadow-hover:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* ======================================================
+   BORDER RADIUS
+====================================================== */
+
+.rounded-lg {
+  border-radius: 20px;
+}
+
+.rounded-xl {
+  border-radius: 28px;
+}
+
+.rounded-pill-custom {
+  border-radius: 999px;
+}
+
+/* ======================================================
+   FLEX UTILITIES
+====================================================== */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ======================================================
+   WIDTH & HEIGHT
+====================================================== */
+
+.w-fit {
+  width: fit-content;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* ======================================================
+   ANIMATION HELPERS
+====================================================== */
+
+.transition {
+  transition: var(--transition);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding: 80px 0;
+  }
+
+  .section-padding-lg {
+    padding: 110px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .section-padding-lg {
+    padding: 90px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}

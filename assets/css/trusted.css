@@ -1,0 +1,158 @@
+/* ==========================================================
+   TRUSTED SECTION
+========================================================== */
+
+.trusted {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.trusted .container {
+  max-width: 1200px;
+}
+
+/* ==========================================================
+   SECTION HEADER
+========================================================== */
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 70px;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: rgba(13, 110, 253, 0.08);
+
+  color: var(--primary);
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  color: var(--heading-color);
+
+  margin-bottom: 22px;
+}
+
+.section-description {
+  font-size: 1.125rem;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+/* ==========================================================
+   TRUSTED LOGOS
+========================================================== */
+
+.trusted-logos {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 24px;
+
+  margin-top: 60px;
+}
+
+.trusted-logo {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  height: 96px;
+
+  background: var(--white);
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  border-radius: 18px;
+
+  font-size: 1.05rem;
+
+  font-weight: 600;
+
+  color: var(--heading-color);
+
+  transition: var(--transition);
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.trusted-logo i {
+  color: var(--primary);
+
+  font-size: 1.3rem;
+}
+
+.trusted-logo:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(13, 110, 253, 0.25);
+
+  box-shadow: 0 20px 50px rgba(13, 110, 253, 0.12);
+
+  color: var(--primary);
+}
+
+.trusted-logo:hover i {
+  transform: scale(1.1);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 991.98px) {
+  .trusted {
+    padding: 80px 0;
+  }
+
+  .trusted-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .trusted-logos {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .trusted-logo {
+    height: 80px;
+  }
+}

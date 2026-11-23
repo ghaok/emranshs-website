@@ -1,0 +1,238 @@
+/* ======================================================
+   EMRAN Smart Healthcare Solutions
+   Premium Interactions
+   Version : 1.0
+====================================================== */
+
+/* ======================================================
+   SMOOTH SCROLL
+====================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================================================
+   CARD HOVER EFFECT
+====================================================== */
+
+.feature-card,
+.benefit-card,
+.usecase-card,
+.stat-card,
+.trusted-logo,
+.workflow-card {
+  border: 1px solid transparent;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.feature-card:hover,
+.benefit-card:hover,
+.usecase-card:hover,
+.stat-card:hover,
+.trusted-logo:hover,
+.workflow-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(15, 111, 255, 0.18);
+
+  box-shadow: 0 28px 60px rgba(15, 111, 255, 0.12);
+}
+
+/* ======================================================
+   ICON HOVER
+====================================================== */
+
+.feature-icon,
+.benefit-icon,
+.usecase-icon {
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+}
+
+.feature-card:hover .feature-icon,
+.benefit-card:hover .benefit-icon,
+.usecase-card:hover .usecase-icon {
+  transform: scale(1.08);
+
+  background: var(--primary);
+
+  color: var(--white);
+}
+
+/* ======================================================
+   BUTTON INTERACTION
+====================================================== */
+
+.btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ======================================================
+   BUTTON LIGHT SWEEP
+====================================================== */
+
+.btn-primary {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  left: -100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  transition: left 0.7s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* ======================================================
+   HERO DASHBOARD
+====================================================== */
+
+.hero-dashboard {
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.hero-dashboard:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.18);
+}
+
+/* ======================================================
+   FLOATING DASHBOARD
+====================================================== */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.dashboard-wrapper {
+  animation: floating 5s ease-in-out infinite;
+}
+
+/* ======================================================
+   FLOATING CARDS
+====================================================== */
+
+@keyframes floatingCard {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-card-1 {
+  animation: floatingCard 4s ease-in-out infinite;
+}
+
+.floating-card-2 {
+  animation: floatingCard 5s ease-in-out infinite;
+}
+
+.floating-card-3 {
+  animation: floatingCard 6s ease-in-out infinite;
+}
+
+/* ======================================================
+   DASHBOARD GLOW
+====================================================== */
+
+.dashboard-wrapper {
+  position: relative;
+}
+
+.dashboard-wrapper::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+
+  height: 420px;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: radial-gradient(rgba(15, 111, 255, 0.18), transparent 70%);
+
+  filter: blur(55px);
+
+  z-index: -1;
+}
+
+/* ======================================================
+   NAVIGATION LINK
+====================================================== */
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* ======================================================
+   FOOTER SOCIAL
+====================================================== */
+
+.footer-social a {
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-4px) rotate(5deg);
+}

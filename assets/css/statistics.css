@@ -1,0 +1,80 @@
+/* ======================================================
+   STATISTICS
+====================================================== */
+
+.statistics {
+  padding: 90px 0;
+  background: var(--white);
+}
+
+.stat-card {
+  background: var(--white);
+
+  border: 1px solid var(--gray-200);
+
+  border-radius: 24px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  transition: var(--transition);
+
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+
+  border-color: var(--primary-light);
+
+  box-shadow: 0 20px 50px rgba(15, 111, 255, 0.1);
+}
+
+.stat-card h2 {
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  color: var(--primary);
+
+  margin-bottom: 12px;
+}
+
+.stat-card p {
+  margin: 0;
+
+  color: var(--text-light);
+
+  font-size: 1rem;
+
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .stat-card {
+    padding: 30px 20px;
+  }
+
+  .stat-card h2 {
+    font-size: 2.2rem;
+  }
+}
+
+.stat-number {
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  color: var(--heading-color);
+
+  line-height: 1;
+}
+
+.stat-number span {
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.95rem;
+}

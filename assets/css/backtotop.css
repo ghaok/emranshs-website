@@ -1,0 +1,51 @@
+/* ======================================================
+   BACK TO TOP
+====================================================== */
+
+#backToTop {
+  position: fixed;
+
+  right: 30px;
+
+  bottom: 30px;
+
+  width: 54px;
+
+  height: 54px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  color: #fff;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: 0.35s;
+
+  z-index: 999;
+
+  box-shadow: 0 20px 40px rgba(15, 111, 255, 0.25);
+}
+
+#backToTop.show {
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  transform: translateY(-4px);
+}

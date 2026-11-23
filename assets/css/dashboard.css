@@ -1,0 +1,51 @@
+/* ======================================================
+   DASHBOARD SHOWCASE
+====================================================== */
+
+.dashboard-section {
+  padding: 120px 0;
+
+  background: #f8fafc;
+}
+
+.dashboard-preview {
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.12);
+}
+
+.dashboard-preview img {
+  width: 100%;
+
+  display: block;
+}
+
+.dashboard-list {
+  margin-top: 35px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.dashboard-list li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+
+  font-size: 1.05rem;
+
+  color: var(--heading-color);
+}
+
+.dashboard-list i {
+  color: var(--secondary);
+
+  font-size: 1.2rem;
+}

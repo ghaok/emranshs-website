@@ -1,0 +1,186 @@
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+}
+
+.navbar.scrolled .logo {
+  height: 42px;
+  transform: scale(0.95);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    height: 40px;
+  }
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+
+/* Navigation */
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  padding: 22px 0;
+
+  background: transparent;
+
+  transition:
+    padding 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+
+  box-shadow:
+    0 8px 30px rgba(15, 23, 42, 0.06),
+    0 1px 0 rgba(255, 255, 255, 0.6);
+
+  transition: all 0.35s ease;
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+
+.nav-link {
+  position: relative;
+
+  color: var(--text-color);
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link.active {
+  color: var(--primary);
+}
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -6px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+/* Button */
+
+.btn-primary {
+  border-radius: 50px;
+
+  padding: 12px 28px;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(15, 111, 255, 0.25);
+}
+
+/* ======================================================
+   NAVBAR - MOBILE
+====================================================== */
+
+/* Mobile */
+
+@media (max-width: 991.98px) {
+  .navbar {
+    background: var(--white);
+    padding: 16px 0;
+  }
+
+  .navbar-collapse {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    gap: 0;
+  }
+
+  .nav-item {
+    padding: 8px 0;
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+/* Hamburger */
+
+.navbar-toggler {
+  border: none;
+
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 1.4rem;
+
+  height: 1.4rem;
+}

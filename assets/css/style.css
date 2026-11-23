@@ -1,0 +1,344 @@
+/* ==========================================================
+   EMRAN Smart Healthcare Solutions
+   Global Styles
+   Version : 1.0
+========================================================== */
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+  color: var(--text-primary);
+  background: var(--body-bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  animation: pageFade 0.8s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container {
+  max-width: var(--container-width);
+}
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+section {
+  padding: var(--section-padding) 0;
+}
+
+.section-light {
+  background: var(--section-light);
+}
+
+.section-dark {
+  background: var(--section-dark);
+  color: #fff;
+}
+
+.section-dark p,
+.section-dark h1,
+.section-dark h2,
+.section-dark h3 {
+  color: #fff;
+}
+
+/* ==========================================================
+   SECTION TITLE
+========================================================== */
+
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.section-title .eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+}
+
+.section-title h2 {
+  margin-bottom: 1rem;
+}
+
+.section-title p {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn {
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.75rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ==========================================================
+   LINK
+========================================================== */
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card {
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+/* ==========================================================
+   SPACING
+========================================================== */
+
+.py-section {
+  padding: var(--section-padding) 0;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 991.98px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+}
+
+/* ==========================================================
+   HERO GRADIENT BACKGROUND
+========================================================== */
